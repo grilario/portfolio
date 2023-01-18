@@ -1,10 +1,12 @@
 import Button from "@/components/Button";
 import Head from "next/head";
 import Image from "next/image";
+import { ArrowUpRight } from "phosphor-react";
 
 import paintBrush from "../../public/paintbrush.svg";
 import computer from "../../public/computer.svg";
 import icons from "../../public/icons.png";
+import car from "../../public/car.jpg";
 
 export default function Home() {
   return (
@@ -95,6 +97,67 @@ export default function Home() {
               para ajudar outras pessoas, seja trabalhando em empresas ou em
               projetos pessoais.
             </p>
+          </section>
+          <section className="my-12">
+            <h2 className="text-2xl font-bold">Projetos</h2>
+            <div className="w-full mt-9 flex gap-8 justify-center flex-wrap">
+              <div className="w-full max-w-md bg-white p-9 shadow-[0_0_4px_rgba(0,0,0,0.25)] rounded-2xl">
+                <Image src={car} alt="" className="w-full rounded-xl" />
+                <h3 className="font-bold text-lg my-5">Lading Page</h3>
+                <p className="text-justify">
+                  Uma página de apresentação para a BMW M4, design feito por
+                  mim, começa com uma imagem de destaque do carro, seguido por
+                  uma descrição geral, há seções de especificações técnicas, com
+                  informações detalhadas sobre o desempenho, a suspensão,
+                  freios, rodas e pneus.
+                </p>
+                <Button className="w-full mt-5 flex items-center justify-center gap-2 font-medium">
+                  Ver projeto <ArrowUpRight weight="bold" size={16} />{" "}
+                </Button>
+              </div>
+              <div className="w-full max-w-md bg-white p-9 shadow-[0_0_4px_rgba(0,0,0,0.25)] rounded-2xl">
+                <Image src={car} alt="" className="w-full rounded-xl" />
+                <h3 className="font-bold text-lg my-5">Lading Page</h3>
+                <p className="text-justify">
+                  Uma página de apresentação para a BMW M4, design feito por
+                  mim, começa com uma imagem de destaque do carro, seguido por
+                  uma descrição geral, há seções de especificações técnicas, com
+                  informações detalhadas sobre o desempenho, a suspensão,
+                  freios, rodas e pneus.
+                </p>
+                <Button className="w-full mt-5 flex items-center justify-center gap-2 font-medium">
+                  Ver projeto <ArrowUpRight weight="bold" size={16} />{" "}
+                </Button>
+              </div>
+              <div className="w-full max-w-md bg-white p-9 shadow-[0_0_4px_rgba(0,0,0,0.25)] rounded-2xl">
+                <Image src={car} alt="" className="w-full rounded-xl" />
+                <h3 className="font-bold text-lg my-5">Lading Page</h3>
+                <p className="text-justify">
+                  Uma página de apresentação para a BMW M4, design feito por
+                  mim, começa com uma imagem de destaque do carro, seguido por
+                  uma descrição geral, há seções de especificações técnicas, com
+                  informações detalhadas sobre o desempenho, a suspensão,
+                  freios, rodas e pneus.
+                </p>
+                <Button className="w-full mt-5 flex items-center justify-center gap-2 font-medium">
+                  Ver projeto <ArrowUpRight weight="bold" size={16} />{" "}
+                </Button>
+              </div>
+              <div className="w-full max-w-md bg-white p-9 shadow-[0_0_4px_rgba(0,0,0,0.25)] rounded-2xl">
+                <Image src={car} alt="" className="w-full rounded-xl" />
+                <h3 className="font-bold text-lg my-5">Lading Page</h3>
+                <p className="text-justify">
+                  Uma página de apresentação para a BMW M4, design feito por
+                  mim, começa com uma imagem de destaque do carro, seguido por
+                  uma descrição geral, há seções de especificações técnicas, com
+                  informações detalhadas sobre o desempenho, a suspensão,
+                  freios, rodas e pneus.
+                </p>
+                <Button className="w-full mt-5 flex items-center justify-center gap-2 font-medium">
+                  Ver projeto <ArrowUpRight weight="bold" size={16} />{" "}
+                </Button>
+              </div>
+            </div>
           </section>
         </main>
       </div>
