@@ -11,7 +11,11 @@ import {
 import paintBrush from "../../public/paintbrush.svg";
 import computer from "../../public/computer.svg";
 import icons from "../../public/icons.png";
-import car from "../../public/car.jpg";
+
+import gym from "../../public/gym-website.jpg";
+import car from "../../public/bmw-website.jpg";
+import player from "../../public/realtime-audio.png";
+import todo from "../../public/todo-website.jpg";
 
 export default function Home() {
   return (
@@ -117,59 +121,70 @@ export default function Home() {
           <section id="projects" className="my-10 pt-7">
             <h2 className="text-2xl font-bold">Projetos</h2>
             <div className="w-full mt-9 flex gap-8 justify-center flex-wrap">
-              <div className="w-full max-w-md bg-white p-9 shadow-[0_0_4px_rgba(0,0,0,0.25)] rounded-2xl">
-                <Image src={car} alt="" className="w-full rounded-xl" />
-                <h3 className="font-bold text-lg my-5">Lading Page</h3>
-                <p className="text-justify">
-                  Uma página de apresentação para a BMW M4, design feito por
-                  mim, começa com uma imagem de destaque do carro, seguido por
-                  uma descrição geral, há seções de especificações técnicas, com
-                  informações detalhadas sobre o desempenho, a suspensão,
-                  freios, rodas e pneus.
+              <div className="flex flex-col w-full max-w-md bg-white p-9 shadow-[0_0_4px_rgba(0,0,0,0.25)] rounded-2xl">
+                <Image src={gym} alt="" className="w-full rounded-xl" />
+                <h3 className="font-bold text-lg my-5">Website de Academia</h3>
+                <p className="text-justify mb-5">
+                  Um website de apresentação de uma academia, design
+                  desenvolvido por mim, apresenta os principais diferencias da
+                  academia, as suas atividades, sua localização e um formulário
+                  para contato.
                 </p>
-                <Button className="w-full mt-5 flex items-center justify-center gap-2 font-medium">
+                <Button
+                  href="https://grilario.github.io/gym-website/"
+                  blank
+                  className="w-full flex items-center justify-center gap-2 font-medium mt-auto"
+                >
                   Ver projeto <ArrowUpRight weight="bold" size={16} />{" "}
                 </Button>
               </div>
-              <div className="w-full max-w-md bg-white p-9 shadow-[0_0_4px_rgba(0,0,0,0.25)] rounded-2xl">
+              <div className="flex flex-col w-full max-w-md bg-white p-9 shadow-[0_0_4px_rgba(0,0,0,0.25)] rounded-2xl">
                 <Image src={car} alt="" className="w-full rounded-xl" />
                 <h3 className="font-bold text-lg my-5">Lading Page</h3>
-                <p className="text-justify">
+                <p className="text-justify mb-5">
                   Uma página de apresentação para a BMW M4, design feito por
                   mim, começa com uma imagem de destaque do carro, seguido por
                   uma descrição geral, há seções de especificações técnicas, com
                   informações detalhadas sobre o desempenho, a suspensão,
                   freios, rodas e pneus.
                 </p>
-                <Button className="w-full mt-5 flex items-center justify-center gap-2 font-medium">
+                <Button
+                  href="https://grilario.github.io/landing-bmw-m4/"
+                  blank
+                  className="w-full flex items-center justify-center gap-2 font-medium mt-auto"
+                >
                   Ver projeto <ArrowUpRight weight="bold" size={16} />{" "}
                 </Button>
               </div>
-              <div className="w-full max-w-md bg-white p-9 shadow-[0_0_4px_rgba(0,0,0,0.25)] rounded-2xl">
-                <Image src={car} alt="" className="w-full rounded-xl" />
-                <h3 className="font-bold text-lg my-5">Lading Page</h3>
-                <p className="text-justify">
-                  Uma página de apresentação para a BMW M4, design feito por
-                  mim, começa com uma imagem de destaque do carro, seguido por
-                  uma descrição geral, há seções de especificações técnicas, com
-                  informações detalhadas sobre o desempenho, a suspensão,
-                  freios, rodas e pneus.
+              <div className="flex flex-col w-full max-w-md bg-white p-9 shadow-[0_0_4px_rgba(0,0,0,0.25)] rounded-2xl">
+                <Image src={player} alt="" className="w-full rounded-xl" />
+                <h3 className="font-bold text-lg my-5">
+                  Player com efeitos em tempo real
+                </h3>
+                <p className="text-justify mb-5">
+                  Um site com player de audio e um painel de controle que é
+                  possível acionar efeitos que são mixados em tempo real.
                 </p>
-                <Button className="w-full mt-5 flex items-center justify-center gap-2 font-medium">
+                <Button
+                  href="https://github.com/grilario/js-expert-spotify"
+                  blank
+                  className="w-full flex items-center justify-center gap-2 font-medium mt-auto"
+                >
                   Ver projeto <ArrowUpRight weight="bold" size={16} />{" "}
                 </Button>
               </div>
-              <div className="w-full max-w-md bg-white p-9 shadow-[0_0_4px_rgba(0,0,0,0.25)] rounded-2xl">
-                <Image src={car} alt="" className="w-full rounded-xl" />
-                <h3 className="font-bold text-lg my-5">Lading Page</h3>
-                <p className="text-justify">
-                  Uma página de apresentação para a BMW M4, design feito por
-                  mim, começa com uma imagem de destaque do carro, seguido por
-                  uma descrição geral, há seções de especificações técnicas, com
-                  informações detalhadas sobre o desempenho, a suspensão,
-                  freios, rodas e pneus.
+              <div className="flex flex-col w-full max-w-md bg-white p-9 shadow-[0_0_4px_rgba(0,0,0,0.25)] rounded-2xl">
+                <Image src={todo} alt="" className="w-full rounded-xl" />
+                <h3 className="font-bold text-lg my-5">Todo list</h3>
+                <p className="text-justify mb-5">
+                  Um lista de tarefas, armazena as tarefas no navegador e
+                  funciona offline
                 </p>
-                <Button className="w-full mt-5 flex items-center justify-center gap-2 font-medium">
+                <Button
+                  href="https://grilario.github.io/to-do-list/"
+                  blank
+                  className="w-full flex items-center justify-center gap-2 font-medium mt-auto"
+                >
                   Ver projeto <ArrowUpRight weight="bold" size={16} />{" "}
                 </Button>
               </div>
@@ -192,11 +207,7 @@ export default function Home() {
                 </a>
               </div>
               <div>
-                <a
-                  href="tel:77999858357"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href="tel:77999858357" target="_blank" rel="noreferrer">
                   <div className="inline-block bg-white p-3 rounded-full shadow-[0_0_4px_rgba(0,0,0,0.4)]">
                     <Phone size={40} />
                   </div>
