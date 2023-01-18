@@ -1,7 +1,12 @@
 import Button from "@/components/Button";
 import Head from "next/head";
 import Image from "next/image";
-import { ArrowUpRight } from "phosphor-react";
+import {
+  ArrowUpRight,
+  EnvelopeSimple,
+  Phone,
+  WhatsappLogo,
+} from "phosphor-react";
 
 import paintBrush from "../../public/paintbrush.svg";
 import computer from "../../public/computer.svg";
@@ -98,7 +103,7 @@ export default function Home() {
               projetos pessoais.
             </p>
           </section>
-          <section className="my-12">
+          <section className="my-14">
             <h2 className="text-2xl font-bold">Projetos</h2>
             <div className="w-full mt-9 flex gap-8 justify-center flex-wrap">
               <div className="w-full max-w-md bg-white p-9 shadow-[0_0_4px_rgba(0,0,0,0.25)] rounded-2xl">
@@ -156,6 +161,32 @@ export default function Home() {
                 <Button className="w-full mt-5 flex items-center justify-center gap-2 font-medium">
                   Ver projeto <ArrowUpRight weight="bold" size={16} />{" "}
                 </Button>
+              </div>
+            </div>
+          </section>
+          <section className="my-14">
+            <h2 className="text-2xl font-bold">Contato</h2>
+            <div className="flex justify-evenly mt-8">
+              <div>
+                <div className="inline-block bg-white p-3 rounded-full shadow-[0_0_4px_rgba(0,0,0,0.4)]">
+                  <WhatsappLogo size={40} />
+                </div>
+                <span className="block font-bold text-lg">WhatsApp</span>
+                <p className="text-sm">77 99985-8357</p>
+              </div>
+              <div>
+                <div className="inline-block bg-white p-3 rounded-full shadow-[0_0_4px_rgba(0,0,0,0.4)]">
+                  <Phone size={40} />
+                </div>
+                <span className="block font-bold text-lg">Telefone</span>
+                <p className="text-sm">77 99985-8357</p>
+              </div>
+              <div>
+                <div className="inline-block bg-white p-3 rounded-full shadow-[0_0_4px_rgba(0,0,0,0.4)]">
+                  <EnvelopeSimple size={40} />
+                </div>
+                <span className="block font-bold text-lg">Email</span>
+                <p className="text-sm">luisfernandinho094@gmail.com</p>
               </div>
             </div>
           </section>
