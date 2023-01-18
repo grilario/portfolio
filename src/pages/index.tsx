@@ -26,7 +26,7 @@ export default function Home() {
       <div className="max-w-6xl mx-auto">
         <header className="w-full flex justify-between items-center py-3 relative">
           <h2 className="text-lg font-bold uppercase">GRILO</h2>
-          <nav className="absolute w-full flex justify-center">
+          <nav className="absolute w-full flex justify-center max-sm:hidden">
             <ul className="flex items-center gap-5">
               <li>
                 <a href="#home" className="hover:text-gray-500">
@@ -59,22 +59,22 @@ export default function Home() {
             id="home"
             className="min-h-screen flex flex-col justify-center relative"
           >
-            <h1 className="font-bold text-6xl">
+            <h1 className="font-bold text-6xl max-sm:text-4xl mt-12">
               Olá! Eu sou <br />
               Luis Fernando
             </h1>
             <div className="flex gap-4 items-center mt-3">
               <div className="flex items-center gap-1">
                 <Image src={paintBrush} alt="" />
-                <p>Design</p>
+                <p className="text-sm">Design</p>
               </div>
               <div className="w-2 h-2 rounded-full bg-gray-600"></div>
               <div className="flex items-center gap-1">
                 <Image src={computer} alt="" />
-                <p>Programador</p>
+                <p className="text-sm">Programador</p>
               </div>
             </div>
-            <p className="mt-6 max-w-[50ch]">
+            <p className="mt-6 text-sm max-w-[50ch]">
               Desenvolvedor de websites e criador de designs, estudo programação
               há mais de 2 anos
             </p>
@@ -90,17 +90,17 @@ export default function Home() {
               width={450}
               src={icons}
               alt=""
-              className="absolute z-[-1] right-0"
+              className="absolute z-[-1] right-0 max-lg:relative max-lg:mb-8 max-lg:left-1/2 max-lg:-translate-x-1/2 max-lg:mt-12"
             />
           </section>
           <section
             id="about"
-            className="bg-gradient-to-b from-[#304DA1] to-[#3B5CC5] rounded-2xl p-10"
+            className="bg-gradient-to-b from-[#304DA1] to-[#3B5CC5] rounded-2xl p-10 max-sm:p-7"
           >
             <h2 className="text-2xl font-bold text-white text-center">
               Sobre mim
             </h2>
-            <p className="mt-4 text-white text-justify">
+            <p className="mt-4 text-white text-sm text-justify">
               Sempre gostei de computadores e de tecnologia, gostava de jogar,
               aprender sobre hardware, mas foi quando entrei no curso técnico no
               Instituto Federal Baiano no ensino médio que descobri o mundo por
@@ -124,7 +124,7 @@ export default function Home() {
               <div className="flex flex-col w-full max-w-md bg-white p-9 shadow-[0_0_4px_rgba(0,0,0,0.25)] rounded-2xl">
                 <Image src={gym} alt="" className="w-full rounded-xl" />
                 <h3 className="font-bold text-lg my-5">Website de Academia</h3>
-                <p className="text-justify mb-5">
+                <p className="text-justify mb-5 text-sm">
                   Um website de apresentação de uma academia, design
                   desenvolvido por mim, apresenta os principais diferencias da
                   academia, as suas atividades, sua localização e um formulário
@@ -141,7 +141,7 @@ export default function Home() {
               <div className="flex flex-col w-full max-w-md bg-white p-9 shadow-[0_0_4px_rgba(0,0,0,0.25)] rounded-2xl">
                 <Image src={car} alt="" className="w-full rounded-xl" />
                 <h3 className="font-bold text-lg my-5">Lading Page</h3>
-                <p className="text-justify mb-5">
+                <p className="text-justify mb-5 text-sm">
                   Uma página de apresentação para a BMW M4, design feito por
                   mim, começa com uma imagem de destaque do carro, seguido por
                   uma descrição geral, há seções de especificações técnicas, com
@@ -161,7 +161,7 @@ export default function Home() {
                 <h3 className="font-bold text-lg my-5">
                   Player com efeitos em tempo real
                 </h3>
-                <p className="text-justify mb-5">
+                <p className="text-justify mb-5 text-sm">
                   Um site com player de audio e um painel de controle que é
                   possível acionar efeitos que são mixados em tempo real.
                 </p>
@@ -176,7 +176,7 @@ export default function Home() {
               <div className="flex flex-col w-full max-w-md bg-white p-9 shadow-[0_0_4px_rgba(0,0,0,0.25)] rounded-2xl">
                 <Image src={todo} alt="" className="w-full rounded-xl" />
                 <h3 className="font-bold text-lg my-5">Todo list</h3>
-                <p className="text-justify mb-5">
+                <p className="text-justify mb-5 text-sm">
                   Um lista de tarefas, armazena as tarefas no navegador e
                   funciona offline
                 </p>
@@ -192,12 +192,13 @@ export default function Home() {
           </section>
           <section id="contact" className="my-14">
             <h2 className="text-2xl font-bold">Contato</h2>
-            <div className="flex justify-evenly mt-8">
+            <div className="flex justify-evenly mt-8 max-sm:flex-col max-sm:items-center gap-4">
               <div>
                 <a
                   href="https://wa.me/77999858357"
                   target="_blank"
                   rel="noreferrer"
+                  className="max-sm:flex flex-col items-center"
                 >
                   <div className="inline-block bg-white p-3 rounded-full shadow-[0_0_4px_rgba(0,0,0,0.4)]">
                     <WhatsappLogo size={40} />
@@ -207,7 +208,12 @@ export default function Home() {
                 </a>
               </div>
               <div>
-                <a href="tel:77999858357" target="_blank" rel="noreferrer">
+                <a
+                  href="tel:77999858357"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="max-sm:flex flex-col items-center"
+                >
                   <div className="inline-block bg-white p-3 rounded-full shadow-[0_0_4px_rgba(0,0,0,0.4)]">
                     <Phone size={40} />
                   </div>
@@ -220,6 +226,7 @@ export default function Home() {
                   href="malito:luisfernandinho094@gmail.com"
                   target="_blank"
                   rel="noreferrer"
+                  className="max-sm:flex flex-col items-center"
                 >
                   <div className="inline-block bg-white p-3 rounded-full shadow-[0_0_4px_rgba(0,0,0,0.4)]">
                     <EnvelopeSimple size={40} />
