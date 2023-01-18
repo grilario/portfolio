@@ -74,6 +74,28 @@ export default function Home() {
               className="absolute z-[-1] right-0"
             />
           </section>
+          <section className="bg-gradient-to-b from-[#304DA1] to-[#3B5CC5] rounded-2xl p-10">
+            <h2 className="text-2xl font-bold text-white text-center">
+              Sobre mim
+            </h2>
+            <p className="mt-4 text-white text-justify">
+              Sempre gostei de computadores e de tecnologia, gostava de jogar,
+              aprender sobre hardware, mas foi quando entrei no curso técnico no
+              Instituto Federal Baiano no ensino médio que descobri o mundo por
+              trás da internet, conheci a programação, o desenvolvimento de
+              voltado a web, e aprendi como a rede mundial de computadores
+              funciona e me apaixonei por esse mundo. Desde então no meu tempo
+              livre tenho me dedicado a aprender a aprimorar minhas habilidades
+              em programação, especialmente no desenvolvimento de websites, o
+              que me levou também a estudar sobre design, principalmente os
+              tópicos de UI e UX. <br />
+              Percebi que a programação é mais do que apenas escrever códigos,
+              com ela posso resolver problemas, criar e inovar, espero continuar
+              nessa jornada aprendendo e evoluindo minhas habilidades, e usá-las
+              para ajudar outras pessoas, seja trabalhando em empresas ou em
+              projetos pessoais.
+            </p>
+          </section>
         </main>
       </div>
     </>
