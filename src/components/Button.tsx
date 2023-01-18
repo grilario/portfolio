@@ -3,11 +3,18 @@ import { HTMLAttributes, ReactNode } from "react";
 interface IButtonProps extends HTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
   href?: string;
+  blank?: boolean;
 }
 
-export default function Button({ children, href, className, ...props }: IButtonProps) {
+export default function Button({
+  children,
+  href,
+  className,
+  blank,
+  ...props
+}: IButtonProps) {
   function openInNewTab() {
-    window.open(href, "_blank")?.focus();
+    window.open(href, blank ? "_blank" : "_self")?.focus();
   }
 
   return (

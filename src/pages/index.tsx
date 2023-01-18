@@ -25,31 +25,36 @@ export default function Home() {
           <nav className="absolute w-full flex justify-center">
             <ul className="flex items-center gap-5">
               <li>
-                <a href="#" className="hover:text-gray-500">
+                <a href="#home" className="hover:text-gray-500">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-gray-500">
+                <a href="#about" className="hover:text-gray-500">
                   Sobre
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-gray-500">
+                <a href="#projects" className="hover:text-gray-500">
                   Projetos
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-gray-500">
+                <a href="#contact" className="hover:text-gray-500">
                   Contatos
                 </a>
               </li>
             </ul>
           </nav>
-          <Button href="https://www.google.com">Conversar</Button>
+          <Button blank href="https://wa.me/77999858357">
+            Conversar
+          </Button>
         </header>
         <main>
-          <section className="min-h-screen flex flex-col justify-center relative">
+          <section
+            id="home"
+            className="min-h-screen flex flex-col justify-center relative"
+          >
             <h1 className="font-bold text-6xl">
               Olá! Eu sou <br />
               Luis Fernando
@@ -70,7 +75,10 @@ export default function Home() {
               há mais de 2 anos
             </p>
             <div>
-              <Button className="text-base font-medium px-6 py-3 my-10">
+              <Button
+                href="#projects"
+                className="text-base font-medium px-6 py-3 my-10"
+              >
                 Meus projetos
               </Button>
             </div>
@@ -81,7 +89,10 @@ export default function Home() {
               className="absolute z-[-1] right-0"
             />
           </section>
-          <section className="bg-gradient-to-b from-[#304DA1] to-[#3B5CC5] rounded-2xl p-10">
+          <section
+            id="about"
+            className="bg-gradient-to-b from-[#304DA1] to-[#3B5CC5] rounded-2xl p-10"
+          >
             <h2 className="text-2xl font-bold text-white text-center">
               Sobre mim
             </h2>
@@ -103,7 +114,7 @@ export default function Home() {
               projetos pessoais.
             </p>
           </section>
-          <section className="my-14">
+          <section id="projects" className="my-10 pt-7">
             <h2 className="text-2xl font-bold">Projetos</h2>
             <div className="w-full mt-9 flex gap-8 justify-center flex-wrap">
               <div className="w-full max-w-md bg-white p-9 shadow-[0_0_4px_rgba(0,0,0,0.25)] rounded-2xl">
@@ -164,29 +175,47 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className="my-14">
+          <section id="contact" className="my-14">
             <h2 className="text-2xl font-bold">Contato</h2>
             <div className="flex justify-evenly mt-8">
               <div>
-                <div className="inline-block bg-white p-3 rounded-full shadow-[0_0_4px_rgba(0,0,0,0.4)]">
-                  <WhatsappLogo size={40} />
-                </div>
-                <span className="block font-bold text-lg">WhatsApp</span>
-                <p className="text-sm">77 99985-8357</p>
+                <a
+                  href="https://wa.me/77999858357"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className="inline-block bg-white p-3 rounded-full shadow-[0_0_4px_rgba(0,0,0,0.4)]">
+                    <WhatsappLogo size={40} />
+                  </div>
+                  <span className="block font-bold text-lg">WhatsApp</span>
+                  <p className="text-sm">77 99985-8357</p>
+                </a>
               </div>
               <div>
-                <div className="inline-block bg-white p-3 rounded-full shadow-[0_0_4px_rgba(0,0,0,0.4)]">
-                  <Phone size={40} />
-                </div>
-                <span className="block font-bold text-lg">Telefone</span>
-                <p className="text-sm">77 99985-8357</p>
+                <a
+                  href="tel:77999858357"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className="inline-block bg-white p-3 rounded-full shadow-[0_0_4px_rgba(0,0,0,0.4)]">
+                    <Phone size={40} />
+                  </div>
+                  <span className="block font-bold text-lg">Telefone</span>
+                  <p className="text-sm">77 99985-8357</p>
+                </a>
               </div>
               <div>
-                <div className="inline-block bg-white p-3 rounded-full shadow-[0_0_4px_rgba(0,0,0,0.4)]">
-                  <EnvelopeSimple size={40} />
-                </div>
-                <span className="block font-bold text-lg">Email</span>
-                <p className="text-sm">luisfernandinho094@gmail.com</p>
+                <a
+                  href="malito:luisfernandinho094@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className="inline-block bg-white p-3 rounded-full shadow-[0_0_4px_rgba(0,0,0,0.4)]">
+                    <EnvelopeSimple size={40} />
+                  </div>
+                  <span className="block font-bold text-lg">Email</span>
+                  <p className="text-sm">luisfernandinho094@gmail.com</p>
+                </a>
               </div>
             </div>
           </section>
