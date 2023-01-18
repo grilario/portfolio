@@ -191,6 +191,9 @@ export default function Home() {
             </div>
           </section>
         </main>
+        <footer className="absolute left-0 w-full flex justify-center p-5 bg-black">
+          <p className="text-white">Feito com ❤️ por @grilario</p>
+        </footer>
       </div>
     </>
   );
